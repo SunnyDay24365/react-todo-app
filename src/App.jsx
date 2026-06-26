@@ -10,7 +10,7 @@ const App = () => {
 
     // quests の中身が変わるたびに、自動でローカルストレージに保存する
     useEffect(() => {
-        localStorage.setItem('my-quests', JSON.stringify(quests));
+      localStorage.setItem('my-quests', JSON.stringify(quests));
     }, [quests]);
 
     // 新しいクエストを追加する関数
