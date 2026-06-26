@@ -10,7 +10,7 @@ function QuestForm({ onAddQuest }) {
         setText(''); // 入力欄を空っぽにする
     }
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
           <input 
             type="text" 
             value={text} 
